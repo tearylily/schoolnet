@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Schoolnet - Eventos</title>
+
+    <link rel="stylesheet" href="../../style.css">
+</head>
+
+<body class="dashboard-page">
+
+    <!-- =========================================
+         CABEÇALHO
+    ========================================== -->
+
+    <header class="topbar">
+
+        <div class="topbar-brand">
+
+            <div class="school-logo">
+                🎓
+            </div>
+
+            <strong>Schoolnet</strong>
+
+            <span>
+                Conectando alunos, professores e a escola.
+            </span>
+
+        </div>
+
+        <div class="topbar-user">
+
+            <div class="user-avatar">
+                👤
+            </div>
+
+            <div class="user-data">
+
+                <strong data-user-name>Usuário</strong>
+
+                <span data-user-role>-</span>
+
+            </div>
+
+            <span class="user-arrow">⌄</span>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================================
+         LAYOUT PRINCIPAL
+    ========================================== -->
+
+    <div class="dashboard-layout">
+
+
+        <!-- =====================================
+             MENU LATERAL
+        ====================================== -->
+
+        <aside class="sidebar">
+
+            <div class="sidebar-brand">
+
+                <span>🎓</span>
+
+                <strong>Schoolnet</strong>
+
+            </div>
+
+
+            <nav class="sidebar-menu">
+
+                <a href="../inicio.html" class="sidebar-item">
+
+                    <span>⌂</span>
+                    <span>Início</span>
+
+                </a>
+
+
+                <a href="../usuarios/usuarios.html" class="sidebar-item">
+
+                    <span>👥</span>
+                    <span>Usuários</span>
+
+                </a>
+
+
+                <a href="../usuarios/cadastro.html" class="sidebar-item">
+
+                    <span>＋</span>
+                    <span>Novo usuário</span>
+
+                </a>
+
+
+                <a href="eventos.html" class="sidebar-item active">
+
+                    <span>▦</span>
+                    <span>Eventos</span>
+
+                </a>
+
+            </nav>
+
+
+            <div class="sidebar-bottom">
+
+                <a href="#" class="sidebar-item" data-logout>
+
+                    <span>↪</span>
+                    <span>Sair</span>
+
+                </a>
+
+            </div>
+
+        </aside>
+
+
+        <!-- =====================================
+             CONTEÚDO
+        ====================================== -->
+
+        <main class="dashboard-content">
+
+
+            <!-- CABEÇALHO DA PÁGINA -->
+
+            <section class="page-header">
+
+                <div>
+
+                    <h1>Eventos</h1>
+
+                    <p>
+                        Consulte e organize os eventos da escola.
+                    </p>
+
+                </div>
+
+                <button
+                    type="button"
+                    id="openEventoModal"
+                    class="btn btn-primary"
+                    style="width:auto; padding:0 20px;"
+                >
+                    + Novo evento
+                </button>
+
+            </section>
+
+
+            <!-- =================================
+                 FILTROS
+            ================================== -->
+
+            <section class="information-box">
+
+                <div class="filters-grid">
+
+                    <div class="form-group">
+                        <label for="eventoSearch">Buscar</label>
+                        <input
+                            type="search"
+                            id="eventoSearch"
+                            placeholder="Buscar por título ou local"
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="tipoFilter">Tipo</label>
+                        <select id="tipoFilter">
+                            <option value="">Todos</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="publicoFilter">Público</label>
+                        <select id="publicoFilter">
+                            <option value="">Todos</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mesFilter">Mês</label>
+                        <select id="mesFilter">
+                            <option value="">Todos</option>
+                        </select>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =================================
+                 LISTA
+            ================================== -->
+
+            <div class="list-heading">
+
+                <span id="eventoCount">0 eventos</span>
+
+                <button type="button" id="refreshEventos" class="btn btn-secondary btn-small">
+                    ↻ Atualizar
+                </button>
+
+            </div>
+
+
+            <div id="eventosStatus" class="table-status" role="status">
+                Carregando eventos...
+            </div>
+
+
+            <section class="events-grid" id="eventosGrid"></section>
+
+        </main>
+
+    </div>
+
+
+    <!-- =========================================
+         MODAL NOVO / EDITAR EVENTO
+    ========================================== -->
+
+    <div class="modal-overlay" id="eventoModal">
+
+        <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+
+            <div class="modal-header">
+
+                <div>
+                    <h2 id="modalTitle">Novo evento</h2>
+                    <p id="modalSubtitle">Cadastre um novo evento escolar.</p>
+                </div>
+
+                <button type="button" class="icon-btn" id="closeEventoModal" title="Fechar">✕</button>
+
+            </div>
+
+
+            <div id="eventoMessage" class="message hidden" role="alert"></div>
+
+
+            <form id="eventoForm" class="form-grid" novalidate>
+
+                <div class="form-group form-full">
+                    <label for="titulo">Título</label>
+                    <input type="text" id="titulo" name="titulo" placeholder="Ex.: Feira de Ciências" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="data">Data</label>
+                    <input type="date" id="data" name="data" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="local">Local</label>
+                    <input type="text" id="local" name="local" placeholder="Ex.: Auditório" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="inicio">Início</label>
+                    <input type="time" id="inicio" name="inicio" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="fim">Término</label>
+                    <input type="time" id="fim" name="fim">
+                </div>
+
+                <div class="form-group">
+                    <label for="tipo">Tipo</label>
+                    <select id="tipo" name="tipo" required>
+                        <option value="">Selecione</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="publico">Público</label>
+                    <select id="publico" name="publico" required>
+                        <option value="">Selecione</option>
+                    </select>
+                </div>
+
+                <div class="form-group form-full">
+                    <label for="descricao">Descrição</label>
+                    <textarea id="descricao" name="descricao" rows="4" placeholder="Descreva o evento..."></textarea>
+                </div>
+
+                <div class="form-actions form-full">
+
+                    <button
+                        type="button"
+                        id="cancelEvento"
+                        class="btn btn-secondary"
+                        style="width:auto; padding:0 20px;"
+                    >
+                        Cancelar
+                    </button>
+
+                    <button
+                        type="submit"
+                        id="saveEvento"
+                        class="btn btn-primary"
+                        style="width:auto; padding:0 20px;"
+                    >
+                        Salvar
+                    </button>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <script src="../../api.js"></script>
+    <script src="../../session.js"></script>
+    <script src="eventos.js"></script>
+
+</body>
+</html>

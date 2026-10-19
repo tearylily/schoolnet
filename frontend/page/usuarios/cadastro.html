@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Schoolnet - Cadastro de usuário</title>
+
+    <link rel="stylesheet" href="../../style.css">
+</head>
+
+<body class="dashboard-page">
+
+    <!-- =========================================
+         CABEÇALHO
+    ========================================== -->
+
+    <header class="topbar">
+
+        <div class="topbar-brand">
+
+            <div class="school-logo">
+                🎓
+            </div>
+
+            <strong>Schoolnet</strong>
+
+            <span>
+                Conectando alunos, professores e a escola.
+            </span>
+
+        </div>
+
+        <div class="topbar-user">
+
+            <div class="user-avatar">
+                👤
+            </div>
+
+            <div class="user-data">
+
+                <strong data-user-name>Usuário</strong>
+
+                <span data-user-role>-</span>
+
+            </div>
+
+            <span class="user-arrow">⌄</span>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================================
+         LAYOUT PRINCIPAL
+    ========================================== -->
+
+    <div class="dashboard-layout">
+
+
+        <!-- =====================================
+             MENU LATERAL
+        ====================================== -->
+
+        <aside class="sidebar">
+
+            <div class="sidebar-brand">
+
+                <span>🎓</span>
+
+                <strong>Schoolnet</strong>
+
+            </div>
+
+
+            <nav class="sidebar-menu">
+
+                <a href="../inicio.html" class="sidebar-item">
+
+                    <span>⌂</span>
+                    <span>Início</span>
+
+                </a>
+
+
+                <a href="usuarios.html" class="sidebar-item">
+
+                    <span>👥</span>
+                    <span>Usuários</span>
+
+                </a>
+
+
+                <a href="cadastro.html" class="sidebar-item active">
+
+                    <span>＋</span>
+                    <span>Novo usuário</span>
+
+                </a>
+
+
+                <a href="../eventos/eventos.html" class="sidebar-item">
+
+                    <span>▦</span>
+                    <span>Eventos</span>
+
+                </a>
+
+            </nav>
+
+
+            <div class="sidebar-bottom">
+
+                <a href="#" class="sidebar-item" data-logout>
+
+                    <span>↪</span>
+                    <span>Sair</span>
+
+                </a>
+
+            </div>
+
+        </aside>
+
+
+        <!-- =====================================
+             CONTEÚDO
+        ====================================== -->
+
+        <main class="dashboard-content">
+
+
+            <!-- CABEÇALHO DA PÁGINA -->
+
+            <section class="page-header">
+
+                <div>
+
+                    <h1 id="formTitle">Novo usuário</h1>
+
+                    <p id="formSubtitle">
+                        Preencha os dados para cadastrar um usuário.
+                    </p>
+
+                </div>
+
+            </section>
+
+
+            <!-- =================================
+                 FORMULÁRIO
+            ================================== -->
+
+            <section class="information-box">
+
+                <div id="formMessage" class="message hidden" role="alert"></div>
+
+                <form id="userForm" class="form-grid" novalidate>
+
+                    <div class="form-group form-full">
+                        <label for="nome">Nome completo</label>
+                        <input
+                            type="text"
+                            id="nome"
+                            name="nome"
+                            placeholder="Ex.: João Silva"
+                            autocomplete="name"
+                            required
+                        >
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="joao@exemplo.com"
+                            autocomplete="off"
+                            required
+                        >
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="perfil">Perfil</label>
+                        <select id="perfil" name="perfil" required>
+                            <option value="">Selecione</option>
+                        </select>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="senha">Senha</label>
+                        <input
+                            type="password"
+                            id="senha"
+                            name="senha"
+                            placeholder="Mínimo de 6 caracteres"
+                            autocomplete="new-password"
+                        >
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="confirmar">Confirmar senha</label>
+                        <input
+                            type="password"
+                            id="confirmar"
+                            name="confirmar"
+                            placeholder="Repita a senha"
+                            autocomplete="new-password"
+                        >
+                    </div>
+
+
+                    <div class="form-actions form-full">
+
+                        <a href="usuarios.html" class="btn btn-secondary" style="width:auto; padding:0 20px;">
+                            Cancelar
+                        </a>
+
+                        <button
+                            type="submit"
+                            id="saveButton"
+                            class="btn btn-primary"
+                            style="width:auto; padding:0 20px;"
+                        >
+                            Salvar
+                        </button>
+
+                    </div>
+
+                </form>
+
+            </section>
+
+
+        </main>
+
+    </div>
+
+    <script src="../../api.js"></script>
+    <script src="../../session.js"></script>
+    <script src="cadastro.js"></script>
+
+</body>
+</html>

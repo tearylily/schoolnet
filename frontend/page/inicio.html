@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Schoolnet - Início</title>
+
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="dashboard-page">
+
+    <!-- =========================================
+         CABEÇALHO
+    ========================================== -->
+
+    <header class="topbar">
+
+        <div class="topbar-brand">
+
+            <div class="school-logo">
+                🎓
+            </div>
+
+            <strong>Schoolnet</strong>
+
+            <span>
+                Conectando alunos, professores e a escola.
+            </span>
+
+        </div>
+
+        <div class="topbar-user">
+
+            <div class="user-avatar">
+                👤
+            </div>
+
+            <div class="user-data">
+
+                <strong data-user-name>Usuário</strong>
+
+                <span data-user-role>-</span>
+
+            </div>
+
+            <span class="user-arrow">⌄</span>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================================
+         LAYOUT PRINCIPAL
+    ========================================== -->
+
+    <div class="dashboard-layout">
+
+
+        <!-- =====================================
+             MENU LATERAL
+        ====================================== -->
+
+        <aside class="sidebar">
+
+            <div class="sidebar-brand">
+
+                <span>🎓</span>
+
+                <strong>Schoolnet</strong>
+
+            </div>
+
+
+            <nav class="sidebar-menu">
+
+                <a href="inicio.html" class="sidebar-item active">
+
+                    <span>⌂</span>
+                    <span>Início</span>
+
+                </a>
+
+
+                <a href="usuarios/usuarios.html" class="sidebar-item">
+
+                    <span>👥</span>
+                    <span>Usuários</span>
+
+                </a>
+
+
+                <a href="usuarios/cadastro.html" class="sidebar-item">
+
+                    <span>＋</span>
+                    <span>Novo usuário</span>
+
+                </a>
+
+
+                <a href="eventos/eventos.html" class="sidebar-item">
+
+                    <span>▦</span>
+                    <span>Eventos</span>
+
+                </a>
+
+            </nav>
+
+
+            <div class="sidebar-bottom">
+
+                <a href="#" class="sidebar-item">
+
+                    <span>⚙</span>
+                    <span>Configurações</span>
+
+                </a>
+
+                <a href="#" class="sidebar-item" data-logout>
+
+                    <span>↪</span>
+                    <span>Sair</span>
+
+                </a>
+
+            </div>
+
+        </aside>
+
+
+        <!-- =====================================
+             CONTEÚDO
+        ====================================== -->
+
+        <main class="dashboard-content">
+
+
+            <!-- BOAS-VINDAS -->
+
+            <section class="welcome">
+
+                <div>
+
+                    <h1>Olá, <span data-user-first-name>usuário</span>!</h1>
+
+                    <p>
+                        Bem-vindo(a) de volta!
+                    </p>
+
+                </div>
+
+            </section>
+
+
+            <!-- =================================
+                 CARDS
+            ================================== -->
+
+            <section class="dashboard-cards">
+
+
+                <!-- HORÁRIOS -->
+
+                <a href="#" class="dashboard-card card-blue">
+
+                    <div class="card-icon">
+                        ▣
+                    </div>
+
+                    <h2>Horários</h2>
+
+                    <p>
+                        Veja seus horários
+                    </p>
+
+                </a>
+
+
+                <!-- ATIVIDADES -->
+
+                <a href="#" class="dashboard-card card-green">
+
+                    <div class="card-icon">
+                        ✓
+                    </div>
+
+                    <h2>Atividades</h2>
+
+                    <p>
+                        Consulte suas atividades
+                    </p>
+
+                </a>
+
+
+                <!-- CONTEÚDOS -->
+
+                <a href="#" class="dashboard-card card-purple">
+
+                    <div class="card-icon">
+                        ▣
+                    </div>
+
+                    <h2>Conteúdos</h2>
+
+                    <p>
+                        Materiais das aulas
+                    </p>
+
+                </a>
+
+
+                <!-- AVISOS -->
+
+                <a href="#" class="dashboard-card card-yellow">
+
+                    <div class="card-icon">
+                        ⚑
+                    </div>
+
+                    <h2>Avisos</h2>
+
+                    <p>
+                        Avisos da escola
+                    </p>
+
+                </a>
+
+
+                <!-- EVENTOS -->
+
+                <a href="eventos/eventos.html" class="dashboard-card card-cyan">
+
+                    <div class="card-icon">
+                        ▦
+                    </div>
+
+                    <h2>Eventos</h2>
+
+                    <p>
+                        Próximos eventos
+                    </p>
+
+                </a>
+
+            </section>
+
+
+            <!-- =================================
+                 PRÓXIMOS EVENTOS
+            ================================== -->
+
+            <section class="information-box">
+
+                <div class="information-header">
+
+                    <h2>Próximos eventos</h2>
+
+                    <a href="eventos/eventos.html">
+                        Ver todos
+                    </a>
+
+                </div>
+
+
+                <div class="event-list" id="homeEvents">
+
+                    <div class="table-status">
+                        Carregando eventos...
+                    </div>
+
+                </div>
+
+            </section>
+
+
+        </main>
+
+    </div>
+
+
+    <!-- =========================================
+         RODAPÉ
+    ========================================== -->
+
+    <footer class="dashboard-footer">
+
+        <div>
+            🛡️
+            <span>
+                <strong>Acessibilidade</strong>
+                <small>Interface inclusiva</small>
+            </span>
+        </div>
+
+        <div>
+            📱
+            <span>
+                <strong>Responsividade</strong>
+                <small>Funciona em todos os dispositivos</small>
+            </span>
+        </div>
+
+        <div>
+            ⚙️
+            <span>
+                <strong>Flexbox / Grid</strong>
+                <small>Layout moderno</small>
+            </span>
+        </div>
+
+        <div>
+            &lt;/&gt;
+            <span>
+                <strong>API</strong>
+                <small>Integração com back-end</small>
+            </span>
+        </div>
+
+        <div class="footer-brand">
+            🎓
+            <strong>Schoolnet</strong>
+        </div>
+
+    </footer>
+
+    <script src="../api.js"></script>
+    <script src="../session.js"></script>
+    <script src="inicio.js"></script>
+</body>
+</html>

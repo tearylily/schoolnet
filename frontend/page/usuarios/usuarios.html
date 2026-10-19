@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Schoolnet - Usuários</title>
+
+    <link rel="stylesheet" href="../../style.css">
+</head>
+
+<body class="dashboard-page">
+
+    <!-- =========================================
+         CABEÇALHO
+    ========================================== -->
+
+    <header class="topbar">
+
+        <div class="topbar-brand">
+
+            <div class="school-logo">
+                🎓
+            </div>
+
+            <strong>Schoolnet</strong>
+
+            <span>
+                Conectando alunos, professores e a escola.
+            </span>
+
+        </div>
+
+        <div class="topbar-user">
+
+            <div class="user-avatar">
+                👤
+            </div>
+
+            <div class="user-data">
+
+                <strong data-user-name>Usuário</strong>
+
+                <span data-user-role>-</span>
+
+            </div>
+
+            <span class="user-arrow">⌄</span>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================================
+         LAYOUT PRINCIPAL
+    ========================================== -->
+
+    <div class="dashboard-layout">
+
+
+        <!-- =====================================
+             MENU LATERAL
+        ====================================== -->
+
+        <aside class="sidebar">
+
+            <div class="sidebar-brand">
+
+                <span>🎓</span>
+
+                <strong>Schoolnet</strong>
+
+            </div>
+
+
+            <nav class="sidebar-menu">
+
+                <a href="../inicio.html" class="sidebar-item">
+
+                    <span>⌂</span>
+                    <span>Início</span>
+
+                </a>
+
+
+                <a href="usuarios.html" class="sidebar-item active">
+
+                    <span>👥</span>
+                    <span>Usuários</span>
+
+                </a>
+
+
+                <a href="cadastro.html" class="sidebar-item">
+
+                    <span>＋</span>
+                    <span>Novo usuário</span>
+
+                </a>
+
+
+                <a href="../eventos/eventos.html" class="sidebar-item">
+
+                    <span>▦</span>
+                    <span>Eventos</span>
+
+                </a>
+
+            </nav>
+
+
+            <div class="sidebar-bottom">
+
+                <a href="#" class="sidebar-item" data-logout>
+
+                    <span>↪</span>
+                    <span>Sair</span>
+
+                </a>
+
+            </div>
+
+        </aside>
+
+
+        <!-- =====================================
+             CONTEÚDO
+        ====================================== -->
+
+        <main class="dashboard-content">
+
+
+            <!-- CABEÇALHO DA PÁGINA -->
+
+            <section class="page-header">
+
+                <div>
+
+                    <h1>Usuários</h1>
+
+                    <p>
+                        Gerencie alunos, professores e administradores.
+                    </p>
+
+                </div>
+
+                <a href="cadastro.html" class="btn btn-primary" style="width:auto; padding:0 20px;">
+                    + Adicionar
+                </a>
+
+            </section>
+
+
+            <!-- =================================
+                 LISTA
+            ================================== -->
+
+            <section class="information-box">
+
+                <div class="table-tools">
+
+                    <input
+                        type="search"
+                        id="searchUser"
+                        class="input-search"
+                        placeholder="Buscar por nome, e-mail ou perfil"
+                    >
+
+                </div>
+
+
+                <div id="usersStatus" class="table-status" role="status">
+                    Carregando usuários...
+                </div>
+
+
+                <div class="table-wrapper">
+
+                    <table class="table">
+
+                        <thead>
+                            <tr>
+                                <th>Nome</th>
+                                <th>E-mail</th>
+                                <th>Perfil</th>
+                                <th class="col-actions">Ações</th>
+                            </tr>
+                        </thead>
+
+                        <tbody id="usersBody"></tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+
+        </main>
+
+    </div>
+
+    <script src="../../api.js"></script>
+    <script src="../../session.js"></script>
+    <script src="usuarios.js"></script>
+
+</body>
+</html>

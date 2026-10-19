@@ -1,0 +1,105 @@
+13:55:56 GET / -> 307 | auth=nao origin=None referer=None ua=Mozilla/5.0 (X11; CrOS x86_64 14541.0.0) AppleWebKit/537.36 
+13:55:56 GET /app/index.html -> 200 | auth=nao origin=None referer=None ua=Mozilla/5.0 (X11; CrOS x86_64 14541.0.0) AppleWebKit/537.36 
+13:55:56 GET /app/style.css -> 200 | auth=nao origin=None referer=http://192.168.31.155:8050/app/index.html ua=Mozilla/5.0 (X11; CrOS x86_64 14541.0.0) AppleWebKit/537.36 
+13:55:56 GET /app/api.js -> 200 | auth=nao origin=None referer=http://192.168.31.155:8050/app/index.html ua=Mozilla/5.0 (X11; CrOS x86_64 14541.0.0) AppleWebKit/537.36 
+13:55:57 GET /app/auth.js -> 200 | auth=nao origin=None referer=http://192.168.31.155:8050/app/index.html ua=Mozilla/5.0 (X11; CrOS x86_64 14541.0.0) AppleWebKit/537.36 
+13:55:57 GET /favicon.ico -> 404 | auth=nao origin=None referer=http://192.168.31.155:8050/app/index.html ua=Mozilla/5.0 (X11; CrOS x86_64 14541.0.0) AppleWebKit/537.36 
+13:57:37 GET /app/api.js -> 200 | auth=nao origin=None referer=None ua=curl/8.14.1
+13:57:43 GET /app/index.html -> 200 | auth=nao origin=None referer=None ua=curl/8.14.1
+13:57:43 GET /app/index.html -> 200 | auth=nao origin=None referer=None ua=curl/8.14.1
+13:57:43 GET /app/index.html -> 200 | auth=nao origin=None referer=None ua=curl/8.14.1
+13:57:43 POST /login -> 200 | auth=nao origin=None referer=None ua=curl/8.14.1
+13:59:18 POST /login -> 200 | auth=nao origin=null referer=None ua=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:157.0) Gecko/20
+13:59:19 POST /login -> 200 | auth=nao origin=http://192.168.31.155:8050 referer=http://192.168.31.155:8050/ ua=Mozilla/5.0 (X11; CrOS x86_64 14541.0.0) AppleWebKit/537.36 
+13:59:31 POST /login -> 200 | auth=nao origin=null referer=None ua=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:157.0) Gecko/20
+13:59:40 OPTIONS /login -> 200 | auth=nao origin=http://192.168.31.155:8050 referer=http://192.168.31.155:8050/ ua=Mozilla/5.0 (X11; CrOS x86_64 14541.0.0) AppleWebKit/537.36 
+13:59:40 POST /login -> 200 | auth=sim origin=http://192.168.31.155:8050 referer=http://192.168.31.155:8050/ ua=Mozilla/5.0 (X11; CrOS x86_64 14541.0.0) AppleWebKit/537.36 
+13:59:54 POST /login -> 200 | auth=nao origin=http://192.168.31.155:8000 referer=http://192.168.31.155:8000/app/index.html ua=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+13:59:54 GET /app/page/inicio.html -> 200 | auth=nao origin=None referer=http://192.168.31.155:8000/app/index.html ua=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+13:59:54 GET /app/style.css -> 304 | auth=nao origin=None referer=http://192.168.31.155:8000/app/page/inicio.html ua=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+13:59:54 GET /app/api.js -> 200 | auth=nao origin=None referer=http://192.168.31.155:8000/app/page/inicio.html ua=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+13:59:54 GET /app/session.js -> 200 | auth=nao origin=None referer=http://192.168.31.155:8000/app/page/inicio.html ua=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+13:59:54 GET /app/page/inicio.js -> 200 | auth=nao origin=None referer=http://192.168.31.155:8000/app/page/inicio.html ua=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+13:59:54 GET /inicio -> 200 | auth=sim origin=None referer=http://192.168.31.155:8000/app/page/inicio.html ua=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+13:59:54 GET /api/events -> 200 | auth=sim origin=None referer=http://192.168.31.155:8000/app/page/inicio.html ua=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+14:00:18 GET /app/index.html -> 200 | auth=nao origin=None referer=None ua=Mozilla/5.0 (X11; CrOS x86_64 14541.0.0) AppleWebKit/537.36 
+14:00:18 GET /app/style.css -> 200 | auth=nao origin=None referer=http://192.168.31.155:8000/app/index.html ua=Mozilla/5.0 (X11; CrOS x86_64 14541.0.0) AppleWebKit/537.36 
+14:00:18 GET /app/api.js -> 200 | auth=nao origin=None referer=http://192.168.31.155:8000/app/index.html ua=Mozilla/5.0 (X11; CrOS x86_64 14541.0.0) AppleWebKit/537.36 
+14:00:18 GET /app/auth.js -> 200 | auth=nao origin=None referer=http://192.168.31.155:8000/app/index.html ua=Mozilla/5.0 (X11; CrOS x86_64 14541.0.0) AppleWebKit/537.36 
+14:00:18 GET /favicon.ico -> 404 | auth=nao origin=None referer=http://192.168.31.155:8000/app/index.html ua=Mozilla/5.0 (X11; CrOS x86_64 14541.0.0) AppleWebKit/537.36 
+14:00:23 POST /login -> 200 | auth=nao origin=http://192.168.31.155:8000 referer=http://192.168.31.155:8000/app/index.html ua=Mozilla/5.0 (X11; CrOS x86_64 14541.0.0) AppleWebKit/537.36 
+14:00:23 GET /app/page/inicio.html -> 200 | auth=nao origin=None referer=http://192.168.31.155:8000/app/index.html ua=Mozilla/5.0 (X11; CrOS x86_64 14541.0.0) AppleWebKit/537.36 
+14:00:23 GET /app/style.css -> 200 | auth=nao origin=None referer=http://192.168.31.155:8000/app/page/inicio.html ua=Mozilla/5.0 (X11; CrOS x86_64 14541.0.0) AppleWebKit/537.36 
+14:00:23 GET /app/api.js -> 200 | auth=nao origin=None referer=http://192.168.31.155:8000/app/page/inicio.html ua=Mozilla/5.0 (X11; CrOS x86_64 14541.0.0) AppleWebKit/537.36 
+14:00:23 GET /app/session.js -> 200 | auth=nao origin=None referer=http://192.168.31.155:8000/app/page/inicio.html ua=Mozilla/5.0 (X11; CrOS x86_64 14541.0.0) AppleWebKit/537.36 
+14:00:23 GET /app/page/inicio.js -> 200 | auth=nao origin=None referer=http://192.168.31.155:8000/app/page/inicio.html ua=Mozilla/5.0 (X11; CrOS x86_64 14541.0.0) AppleWebKit/537.36 
+14:00:24 GET /inicio -> 200 | auth=sim origin=None referer=http://192.168.31.155:8000/app/page/inicio.html ua=Mozilla/5.0 (X11; CrOS x86_64 14541.0.0) AppleWebKit/537.36 
+14:00:24 GET /api/events -> 200 | auth=sim origin=None referer=http://192.168.31.155:8000/app/page/inicio.html ua=Mozilla/5.0 (X11; CrOS x86_64 14541.0.0) AppleWebKit/537.36 
+14:01:13 GET /app/page/usuarios/usuarios.html -> 200 | auth=nao origin=None referer=http://192.168.31.155:8000/app/page/inicio.html ua=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+14:01:13 GET /app/style.css -> 200 | auth=nao origin=None referer=http://192.168.31.155:8000/app/page/usuarios/usuarios.html ua=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+14:01:13 GET /app/session.js -> 200 | auth=nao origin=None referer=http://192.168.31.155:8000/app/page/usuarios/usuarios.html ua=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+14:01:13 GET /app/page/usuarios/usuarios.js -> 200 | auth=nao origin=None referer=http://192.168.31.155:8000/app/page/usuarios/usuarios.html ua=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+14:01:13 GET /app/api.js -> 200 | auth=nao origin=None referer=http://192.168.31.155:8000/app/page/usuarios/usuarios.html ua=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+14:01:13 GET /inicio -> 200 | auth=sim origin=None referer=http://192.168.31.155:8000/app/page/usuarios/usuarios.html ua=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+14:01:13 GET /api/users -> 200 | auth=sim origin=None referer=http://192.168.31.155:8000/app/page/usuarios/usuarios.html ua=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+14:01:21 GET /app/page/usuarios/cadastro.html -> 200 | auth=nao origin=None referer=http://192.168.31.155:8000/app/page/usuarios/usuarios.html ua=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+14:01:21 GET /app/page/usuarios/cadastro.js -> 200 | auth=nao origin=None referer=http://192.168.31.155:8000/app/page/usuarios/cadastro.html ua=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+14:01:21 GET /app/style.css -> 200 | auth=nao origin=None referer=http://192.168.31.155:8000/app/page/usuarios/cadastro.html ua=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+14:01:21 GET /app/session.js -> 200 | auth=nao origin=None referer=http://192.168.31.155:8000/app/page/usuarios/cadastro.html ua=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+14:01:21 GET /app/api.js -> 200 | auth=nao origin=None referer=http://192.168.31.155:8000/app/page/usuarios/cadastro.html ua=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+14:01:21 GET /inicio -> 200 | auth=sim origin=None referer=http://192.168.31.155:8000/app/page/usuarios/cadastro.html ua=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+14:01:22 GET /app/page/usuarios/usuarios.html -> 200 | auth=nao origin=None referer=http://192.168.31.155:8000/app/page/usuarios/cadastro.html ua=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+14:01:22 GET /app/api.js -> 200 | auth=nao origin=None referer=http://192.168.31.155:8000/app/page/usuarios/usuarios.html ua=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+14:01:22 GET /app/page/usuarios/usuarios.js -> 200 | auth=nao origin=None referer=http://192.168.31.155:8000/app/page/usuarios/usuarios.html ua=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+14:01:22 GET /app/session.js -> 200 | auth=nao origin=None referer=http://192.168.31.155:8000/app/page/usuarios/usuarios.html ua=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+14:01:22 GET /app/style.css -> 200 | auth=nao origin=None referer=http://192.168.31.155:8000/app/page/usuarios/usuarios.html ua=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+14:01:22 GET /inicio -> 200 | auth=sim origin=None referer=http://192.168.31.155:8000/app/page/usuarios/usuarios.html ua=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+14:01:22 GET /api/users -> 200 | auth=sim origin=None referer=http://192.168.31.155:8000/app/page/usuarios/usuarios.html ua=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+14:01:26 GET /app/page/usuarios/usuarios.html -> 200 | auth=nao origin=None referer=http://192.168.31.155:8000/app/page/inicio.html ua=Mozilla/5.0 (X11; CrOS x86_64 14541.0.0) AppleWebKit/537.36 
+14:01:27 GET /app/style.css -> 200 | auth=nao origin=None referer=http://192.168.31.155:8000/app/page/usuarios/usuarios.html ua=Mozilla/5.0 (X11; CrOS x86_64 14541.0.0) AppleWebKit/537.36 
+14:01:27 GET /app/session.js -> 200 | auth=nao origin=None referer=http://192.168.31.155:8000/app/page/usuarios/usuarios.html ua=Mozilla/5.0 (X11; CrOS x86_64 14541.0.0) AppleWebKit/537.36 
+14:01:27 GET /app/page/usuarios/usuarios.js -> 200 | auth=nao origin=None referer=http://192.168.31.155:8000/app/page/usuarios/usuarios.html ua=Mozilla/5.0 (X11; CrOS x86_64 14541.0.0) AppleWebKit/537.36 
+14:01:27 GET /app/api.js -> 200 | auth=nao origin=None referer=http://192.168.31.155:8000/app/page/usuarios/usuarios.html ua=Mozilla/5.0 (X11; CrOS x86_64 14541.0.0) AppleWebKit/537.36 
+14:01:28 GET /inicio -> 200 | auth=sim origin=None referer=http://192.168.31.155:8000/app/page/usuarios/usuarios.html ua=Mozilla/5.0 (X11; CrOS x86_64 14541.0.0) AppleWebKit/537.36 
+14:01:28 GET /api/users -> 200 | auth=sim origin=None referer=http://192.168.31.155:8000/app/page/usuarios/usuarios.html ua=Mozilla/5.0 (X11; CrOS x86_64 14541.0.0) AppleWebKit/537.36 
+14:01:41 GET /app/page/eventos/eventos.html -> 200 | auth=nao origin=None referer=http://192.168.31.155:8000/app/page/usuarios/usuarios.html ua=Mozilla/5.0 (X11; CrOS x86_64 14541.0.0) AppleWebKit/537.36 
+14:01:41 GET /app/style.css -> 200 | auth=nao origin=None referer=http://192.168.31.155:8000/app/page/eventos/eventos.html ua=Mozilla/5.0 (X11; CrOS x86_64 14541.0.0) AppleWebKit/537.36 
+14:01:41 GET /app/session.js -> 200 | auth=nao origin=None referer=http://192.168.31.155:8000/app/page/eventos/eventos.html ua=Mozilla/5.0 (X11; CrOS x86_64 14541.0.0) AppleWebKit/537.36 
+14:01:41 GET /app/api.js -> 200 | auth=nao origin=None referer=http://192.168.31.155:8000/app/page/eventos/eventos.html ua=Mozilla/5.0 (X11; CrOS x86_64 14541.0.0) AppleWebKit/537.36 
+14:01:43 GET /app/page/eventos/eventos.js -> 200 | auth=nao origin=None referer=http://192.168.31.155:8000/app/page/eventos/eventos.html ua=Mozilla/5.0 (X11; CrOS x86_64 14541.0.0) AppleWebKit/537.36 
+14:01:46 GET /inicio -> 200 | auth=sim origin=None referer=http://192.168.31.155:8000/app/page/eventos/eventos.html ua=Mozilla/5.0 (X11; CrOS x86_64 14541.0.0) AppleWebKit/537.36 
+14:01:47 GET /api/events -> 200 | auth=sim origin=None referer=http://192.168.31.155:8000/app/page/eventos/eventos.html ua=Mozilla/5.0 (X11; CrOS x86_64 14541.0.0) AppleWebKit/537.36 
+14:02:55 POST /api/events -> 201 | auth=sim origin=http://192.168.31.155:8000 referer=http://192.168.31.155:8000/app/page/eventos/eventos.html ua=Mozilla/5.0 (X11; CrOS x86_64 14541.0.0) AppleWebKit/537.36 
+14:02:55 GET /api/events -> 200 | auth=sim origin=None referer=http://192.168.31.155:8000/app/page/eventos/eventos.html ua=Mozilla/5.0 (X11; CrOS x86_64 14541.0.0) AppleWebKit/537.36 
+14:02:59 GET /app/page/eventos/eventos.html -> 200 | auth=nao origin=None referer=http://192.168.31.155:8000/app/page/usuarios/usuarios.html ua=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+14:02:59 GET /app/style.css -> 200 | auth=nao origin=None referer=http://192.168.31.155:8000/app/page/eventos/eventos.html ua=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+14:02:59 GET /app/api.js -> 200 | auth=nao origin=None referer=http://192.168.31.155:8000/app/page/eventos/eventos.html ua=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+14:02:59 GET /app/session.js -> 200 | auth=nao origin=None referer=http://192.168.31.155:8000/app/page/eventos/eventos.html ua=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+14:02:59 GET /app/page/eventos/eventos.js -> 200 | auth=nao origin=None referer=http://192.168.31.155:8000/app/page/eventos/eventos.html ua=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+14:02:59 GET /inicio -> 200 | auth=sim origin=None referer=http://192.168.31.155:8000/app/page/eventos/eventos.html ua=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+14:03:02 GET /app/page/inicio.html -> 200 | auth=nao origin=None referer=http://192.168.31.155:8000/app/page/eventos/eventos.html ua=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+14:03:02 GET /app/style.css -> 200 | auth=nao origin=None referer=http://192.168.31.155:8000/app/page/inicio.html ua=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+14:03:02 GET /app/session.js -> 200 | auth=nao origin=None referer=http://192.168.31.155:8000/app/page/inicio.html ua=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+14:03:02 GET /app/api.js -> 200 | auth=nao origin=None referer=http://192.168.31.155:8000/app/page/inicio.html ua=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+14:03:02 GET /app/page/inicio.js -> 200 | auth=nao origin=None referer=http://192.168.31.155:8000/app/page/inicio.html ua=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+14:03:02 GET /inicio -> 200 | auth=sim origin=None referer=http://192.168.31.155:8000/app/page/inicio.html ua=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+14:03:03 GET /api/events -> 200 | auth=sim origin=None referer=http://192.168.31.155:8000/app/page/inicio.html ua=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+14:03:04 GET /app/page/eventos/eventos.html -> 200 | auth=nao origin=None referer=http://192.168.31.155:8000/app/page/inicio.html ua=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+14:03:04 GET /app/session.js -> 200 | auth=nao origin=None referer=http://192.168.31.155:8000/app/page/eventos/eventos.html ua=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+14:03:04 GET /app/style.css -> 200 | auth=nao origin=None referer=http://192.168.31.155:8000/app/page/eventos/eventos.html ua=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+14:03:04 GET /app/api.js -> 200 | auth=nao origin=None referer=http://192.168.31.155:8000/app/page/eventos/eventos.html ua=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+14:03:04 GET /app/page/eventos/eventos.js -> 200 | auth=nao origin=None referer=http://192.168.31.155:8000/app/page/eventos/eventos.html ua=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+14:03:04 GET /inicio -> 200 | auth=sim origin=None referer=http://192.168.31.155:8000/app/page/eventos/eventos.html ua=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+14:03:06 GET /app/page/eventos/eventos.html -> 200 | auth=nao origin=None referer=http://192.168.31.155:8000/app/page/inicio.html ua=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+14:03:06 GET /app/api.js -> 200 | auth=nao origin=None referer=http://192.168.31.155:8000/app/page/eventos/eventos.html ua=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+14:03:06 GET /app/session.js -> 200 | auth=nao origin=None referer=http://192.168.31.155:8000/app/page/eventos/eventos.html ua=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+14:03:06 GET /app/page/eventos/eventos.js -> 200 | auth=nao origin=None referer=http://192.168.31.155:8000/app/page/eventos/eventos.html ua=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+14:03:06 GET /app/style.css -> 200 | auth=nao origin=None referer=http://192.168.31.155:8000/app/page/eventos/eventos.html ua=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+14:03:06 GET /inicio -> 200 | auth=sim origin=None referer=http://192.168.31.155:8000/app/page/eventos/eventos.html ua=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+14:03:06 GET /api/events -> 200 | auth=sim origin=None referer=http://192.168.31.155:8000/app/page/eventos/eventos.html ua=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+14:03:18 GET /app/page/usuarios/cadastro.html -> 200 | auth=nao origin=None referer=http://192.168.31.155:8000/app/page/eventos/eventos.html ua=Mozilla/5.0 (X11; CrOS x86_64 14541.0.0) AppleWebKit/537.36 
+14:03:18 GET /app/style.css -> 200 | auth=nao origin=None referer=http://192.168.31.155:8000/app/page/usuarios/cadastro.html ua=Mozilla/5.0 (X11; CrOS x86_64 14541.0.0) AppleWebKit/537.36 
+14:03:20 GET /app/api.js -> 200 | auth=nao origin=None referer=http://192.168.31.155:8000/app/page/usuarios/cadastro.html ua=Mozilla/5.0 (X11; CrOS x86_64 14541.0.0) AppleWebKit/537.36 
+14:03:22 GET /app/session.js -> 200 | auth=nao origin=None referer=http://192.168.31.155:8000/app/page/usuarios/cadastro.html ua=Mozilla/5.0 (X11; CrOS x86_64 14541.0.0) AppleWebKit/537.36 
+14:03:22 GET /app/page/usuarios/cadastro.js -> 200 | auth=nao origin=None referer=http://192.168.31.155:8000/app/page/usuarios/cadastro.html ua=Mozilla/5.0 (X11; CrOS x86_64 14541.0.0) AppleWebKit/537.36 
+14:03:28 GET /inicio -> 200 | auth=sim origin=None referer=http://192.168.31.155:8000/app/page/usuarios/cadastro.html ua=Mozilla/5.0 (X11; CrOS x86_64 14541.0.0) AppleWebKit/537.36 
